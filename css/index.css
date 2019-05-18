@@ -168,6 +168,15 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+
+form {
+  max-width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 @media (max-width: 500px) {
   .container {
     width: 90%;
@@ -350,3 +359,4 @@ img {
   background: #FFFFFF;
   color: #17A2B8;
 }
+
