@@ -9,6 +9,12 @@ nav.addEventListener('mouseover', function(event) {
     }, 500);
 }, false);
 
+
+//Mouseup
+img2.addEventListener('mouseup', function(event) {
+    event.target.style.opacity = '0'; 
+});
+
 //Keydown
 const name = document.querySelector('.first-name')
 name.addEventListener('keydown',function(event) {
@@ -42,4 +48,21 @@ button2.addEventListener('dblclick', function(event) {
 const img1 = document.querySelector('#img1');
 img1.addEventListener('mouseenter', function(event) {
     event.target.style.border = '5px dashed orange';
+});
+
+//Resize
+window.addEventListener('resize', (event) => {
+    console.log(event);
+    alert('I got my eye on you!');
+});
+
+//Mouseleave
+img3.addEventListener('mouseleave', function(event) {
+    event.target.style.border = '8px solid teal';
+});
+
+//Scroll
+window.addEventListener('scroll', function(event) {
+    console.log('Keep scrolling!');
+    img2.style.transform = 'rotate(180deg)';
 });
