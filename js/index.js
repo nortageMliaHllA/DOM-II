@@ -66,3 +66,11 @@ window.addEventListener('scroll', function(event) {
     console.log('Keep scrolling!');
     img2.style.transform = 'rotate(180deg)';
 });
+
+//Preventdefault
+const navLinks = document.querySelectorAll('nav-link');
+navLinks.forEach((link) => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+    })
+})
